@@ -29,6 +29,7 @@ public class PostHttpClient : IPostService
         throw new NotImplementedException();
     }
 
+
     public async Task<ICollection<Post>> GetAsync(string? userName, int? userId, string? titleContains, string? textContains)
     {
         string query = ConstructQuery(userName, userId, titleContains, textContains);
@@ -62,13 +63,12 @@ public class PostHttpClient : IPostService
     
     public async Task<PostBasicDto> GetByIdAsync(int id)
     {
-        HttpResponseMessage response = await client.GetAsync($"/Posts/{id}");
+        HttpResponseMessage response = await client.GetAsync($"/posts/{id}");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(content);
         }
-
         PostBasicDto post = JsonSerializer.Deserialize<PostBasicDto>(content, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true

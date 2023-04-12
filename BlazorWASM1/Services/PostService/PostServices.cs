@@ -1,4 +1,5 @@
-﻿using LoginFuncProject.Models;
+﻿using System.Net;
+using LoginFuncProject.Models;
 
 namespace BlazorWasm1.Services.PostService;
 
@@ -15,14 +16,20 @@ public class PostServices : IPostServices
     
     public async Task GetPost()
     {
-        var result = await _http.GetFromJsonAsync<List<Post>>("controller");
+        var result = await _http.GetFromJsonAsync<ICollection<Post>>("controller");
         if (result is not null)
-            Posts = result;
+            Posts = (List<Post>) result;
     }
 
     public async Task<Post?> GetPostById(int id)
     {
-        throw new NotImplementedException();
+        var result = await _http.GetAsync($"post/{id}");
+        if (result.StatusCode == HttpStatusCode.Ok)
+        {
+            return await result.Content.ReadFromJsonAsync<Post>();
+        }
+
+        return null;
     }
 
     public async Task CreatePost(Post post)

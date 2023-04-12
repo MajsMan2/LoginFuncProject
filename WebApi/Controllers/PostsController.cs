@@ -11,12 +11,12 @@ namespace WebAPI.Controllers;
 public class PostsController : ControllerBase
 {
     private readonly IPostLogic postLogic;
-    private readonly IPostServices postService;
+    //private readonly IPostServices postService;
 
-    public PostsController(IPostLogic postLogic, IPostServices postService)
+    public PostsController(IPostLogic postLogic)
     {
         this.postLogic = postLogic;
-        this.postService = postService;
+      //  this.postService = postService;
     }
     [HttpPost]
     public async Task<ActionResult<Post>> CreateAsync([FromBody]PostCreationDto dto)
@@ -78,9 +78,9 @@ public class PostsController : ControllerBase
         }
     }
 
-    [HttpGet]
-    public async Task<List<Post>> GetPost()
-    {
-        return await postService.GetPost();
-    }
+    //[HttpGet]
+    //public async Task<List<Post>> GetPost()
+    //{
+     //   return await postService.GetPost();
+    //}
 }
