@@ -1,4 +1,4 @@
-﻿using Entities.DTO;
+﻿using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 
 namespace WebApi.Services;

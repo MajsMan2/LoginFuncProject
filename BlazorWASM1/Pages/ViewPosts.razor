@@ -10,7 +10,7 @@
     <tr>
         <th>Title</th>
         <th>Text</th>
-        <th>UserName</th>
+        <th>Id</th>
     </tr>
     </thead>
     <tbody>
@@ -26,14 +26,12 @@
                     <i class="oi oi-pencil"></i>
                     </button>
             </td>
-
         </tr>
     }
     </tbody>
 </table>
 
 @code {
-
     protected override async Task OnInitializedAsync()
     {
         await PostService.GetPost();

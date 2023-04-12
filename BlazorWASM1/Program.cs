@@ -20,7 +20,6 @@ builder.Services.AddScoped<IPostServices, PostServices>();
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped(sp => new System.Net.Http.HttpClient());
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

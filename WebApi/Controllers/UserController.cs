@@ -1,5 +1,5 @@
 using Application.LogicInterfaces;
-using Entities.DTO;
+using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 using Microsoft.AspNetCore.Mvc;
 

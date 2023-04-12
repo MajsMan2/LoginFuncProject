@@ -1,5 +1,5 @@
 using Application.DAOInterfaces;
-using Entities.DTO;
+using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 
 namespace FileData.DAO;

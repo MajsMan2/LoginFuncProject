@@ -1,6 +1,6 @@
 using Application.DAOInterfaces;
 using Application.LogicInterfaces;
-using Entities.DTO;
+using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 
 namespace Application.Logic;

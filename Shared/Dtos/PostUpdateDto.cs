@@ -1,4 +1,4 @@
-namespace Entities.DTO;
+namespace LoginFuncProject.Dtos;
 
 public class PostUpdateDto
 {
