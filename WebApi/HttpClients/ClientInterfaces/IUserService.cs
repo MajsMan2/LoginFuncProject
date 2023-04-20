@@ -1,7 +1,7 @@
 ﻿using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 
-namespace WebApi.Services;
+namespace WebApi.HttpClients.ClientInterfaces;
 
 public interface IUserService
 {

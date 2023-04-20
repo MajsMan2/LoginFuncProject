@@ -2,7 +2,6 @@ using Application.LogicInterfaces;
 using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Services;
 
 namespace WebAPI.Controllers;
 

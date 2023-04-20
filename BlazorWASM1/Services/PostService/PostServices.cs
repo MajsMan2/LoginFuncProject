@@ -24,7 +24,7 @@ public class PostServices : IPostServices
     public async Task<Post?> GetPostById(int id)
     {
         var result = await _http.GetAsync($"post/{id}");
-        if (result.StatusCode == HttpStatusCode.Ok)
+        if (result.StatusCode == HttpStatusCode.OK)
         {
             return await result.Content.ReadFromJsonAsync<Post>();
         }

@@ -1,8 +1,9 @@
 ﻿using System.Text.Json;
 using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
+using WebApi.HttpClients.ClientInterfaces;
 
-namespace WebApi.Services;
+namespace WebApi.HttpClients.Implementations;
 
 public class UserHttpClient : IUserService
 {

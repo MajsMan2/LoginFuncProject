@@ -2,8 +2,9 @@
 using System.Text.Json;
 using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
+using WebApi.HttpClients.ClientInterfaces;
 
-namespace WebApi.Services;
+namespace WebApi.HttpClients.Implementations;
 
 public class PostHttpClient : IPostService
 {
@@ -25,12 +26,6 @@ public class PostHttpClient : IPostService
     }
 
     public async Task<ICollection<Post>> GetAsync(string? userName, int? userId, bool? completedStatus, string? titleContains, string? textContains)
-    {
-        throw new NotImplementedException();
-    }
-
-
-    public async Task<ICollection<Post>> GetAsync(string? userName, int? userId, string? titleContains, string? textContains)
     {
         string query = ConstructQuery(userName, userId, titleContains, textContains);
 

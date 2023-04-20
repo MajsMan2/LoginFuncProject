@@ -2,9 +2,10 @@ using BlazorWasm1.Auth;
 using BlazorWasm1.Services.Http;
 using BlazorWasm1.Services.PostService;
 using Microsoft.AspNetCore.Components.Authorization;
-using WebApi.Services;
+using WebApi.HttpClients.ClientInterfaces;
+using WebApi.HttpClients.Implementations;
 using IAuthService = BlazorWasm1.Services.IAuthService;
-using IPostService = WebApi.Services.IPostService;
+using IPostService = WebApi.HttpClients.ClientInterfaces.IPostService;
 
 var builder = WebApplication.CreateBuilder(args);
 
