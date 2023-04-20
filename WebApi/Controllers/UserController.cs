@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebAPI.Controllers;
 
 [ApiController]
-[Route("Controller")]
+[Route("[Controller]")]
 public class UserController : ControllerBase
 {
     private readonly IUserLogic userLogic;

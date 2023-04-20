@@ -1,9 +1,10 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Json;
+using System.Text.Json;
+using HttpClients.ClientInterfaces;
 using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
-using WebApi.HttpClients.ClientInterfaces;
 
-namespace WebApi.HttpClients.Implementations;
+namespace HttpClients.Implementations;
 
 public class UserHttpClient : IUserService
 {
@@ -16,7 +17,7 @@ public class UserHttpClient : IUserService
 
     public async Task<User> Create(UserCreationDto dto)
     {
-        HttpResponseMessage response = await client.PostAsJsonAsync("/users", dto);
+        HttpResponseMessage response = await client.PostAsJsonAsync("/user", dto);
         string result = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

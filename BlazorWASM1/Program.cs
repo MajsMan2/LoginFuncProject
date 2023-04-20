@@ -1,11 +1,10 @@
 using BlazorWasm1.Auth;
+using BlazorWasm1.Services;
 using BlazorWasm1.Services.Http;
 using BlazorWasm1.Services.PostService;
+using HttpClients.ClientInterfaces;
+using HttpClients.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
-using WebApi.HttpClients.ClientInterfaces;
-using WebApi.HttpClients.Implementations;
-using IAuthService = BlazorWasm1.Services.IAuthService;
-using IPostService = WebApi.HttpClients.ClientInterfaces.IPostService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +18,10 @@ builder.Services.AddScoped<IPostService, PostHttpClient>();
 builder.Services.AddScoped<IPostServices, PostServices>();
 
 builder.Services.AddAuthorizationCore();
-builder.Services.AddScoped(sp => new System.Net.Http.HttpClient());
+builder.Services.AddScoped(sp => new HttpClient
+{
+    BaseAddress = new Uri("https://localhost:7264")
+});
 
 var app = builder.Build();
 

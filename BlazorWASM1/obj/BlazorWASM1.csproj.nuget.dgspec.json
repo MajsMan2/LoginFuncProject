@@ -4,63 +4,6 @@
     "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\BlazorWASM1\\BlazorWASM1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\BlazorWASM1\\BlazorWASM1.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\HttpClients.csproj": {
+                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\HttpClients.csproj"
+              },
               "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj"
-              },
-              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj": {
-                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj"
               }
             }
           }
@@ -116,6 +59,63 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\HttpClients.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\HttpClients.csproj",
+        "projectName": "HttpClients",
+        "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\HttpClients.csproj",
+        "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\HttpClients\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -183,87 +183,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Application\\Application.csproj"
-              },
-              "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\Shared\\Shared.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.AspNetCore.Components.Authorization": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.2, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

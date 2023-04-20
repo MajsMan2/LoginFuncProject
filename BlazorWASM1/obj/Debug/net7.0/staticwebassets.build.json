@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "7SzQ1aYAk3tlJS8ElUrd4VQm3mzB/WtDZhHCN05zTvE=",
+  "Hash": "zwVhUf6zxKkcm7+ZcKTeUtQifLrS6TqyHILYeUUVZRY=",
   "Source": "BlazorWASM1",
   "BasePath": "_content/BlazorWASM1",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\Users\\Marius\\RiderProjects\\LoginFuncProject\\WebApi\\WebApi.csproj",
-      "Version": 2,
-      "Source": "WebApi",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "BlazorWASM1\\wwwroot",

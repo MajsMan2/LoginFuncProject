@@ -1,10 +1,11 @@
-﻿using System.Text;
+﻿using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
+using HttpClients.ClientInterfaces;
 using LoginFuncProject.Dtos;
 using LoginFuncProject.Models;
-using WebApi.HttpClients.ClientInterfaces;
 
-namespace WebApi.HttpClients.Implementations;
+namespace HttpClients.Implementations;
 
 public class PostHttpClient : IPostService
 {
